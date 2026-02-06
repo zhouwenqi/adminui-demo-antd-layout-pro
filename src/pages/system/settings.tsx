@@ -124,8 +124,7 @@ export default function(){
                 return
             }
 
-            const config = setSkinConfig(layoutConfig,skin)
-            console.log(config)
+            const config = setSkinConfig(layoutConfig,skin)          
             setLayoutConfig({
                 ...config,
                 skinName:e
@@ -134,9 +133,10 @@ export default function(){
             setLayoutConfig({
                 ...layoutConfig,                
                 ...initConfig,
+                menuItemSelectColor:undefined,
                 noneHeader:false,
                 hideBorder:false,
-                skinName:undefined
+                skinName:""
             })
         }
     }
@@ -147,15 +147,17 @@ export default function(){
             noneHeader:false,
             hideBorder:false,
             primaryColor:e,
-            skinName:undefined
+            skinName:""
         })
     }
+
+    const defaultSkinName = layoutConfig.skinName || undefined
 
     const isSkin:boolean = Boolean(layoutConfig.skinName)
 
     const data:ConfigData[]=[
         {title:intl.formatMessage({id:"setting.theme.title"}),element:(<Segmented disabled={isSkin} styles={{label:segmentItem,icon:segmentIcon}} options={themeOptions} defaultValue={layoutConfig.theme} value={layoutConfig.theme} onChange={(e)=>{setLayoutConfig({...layoutConfig,theme: e as Theme})}} />)},
-        {title:intl.formatMessage({id:"setting.skin.title"}),element:(<Select placeholder={intl.formatMessage({id:"skin.none.label"})} allowClear options={skinOptions} value={layoutConfig.skinName} onChange={onChangeSkin} onClear={()=>{onChangeSkin("")}} />)},
+        {title:intl.formatMessage({id:"setting.skin.title"}),element:(<Select defaultValue={defaultSkinName} placeholder={intl.formatMessage({id:"skin.none.label"})} allowClear options={skinOptions} value={defaultSkinName} onChange={onChangeSkin} onClear={()=>{onChangeSkin("")}} />)},
         {title:intl.formatMessage({id:"setting.layout.title"}),element:(<Segmented styles={{label:segmentItem,icon:segmentIcon}} options={layoutTypes} defaultValue={layoutConfig.layoutType} value={layoutConfig.layoutType} onChange={(e)=>{setLayoutConfig({...layoutConfig,layoutType: e as LayoutType})}} />)},
         {title:intl.formatMessage({id:"setting.theme.color"}),element:(<ColorPicker defaultValue={layoutConfig.primaryColor} value={layoutConfig.primaryColor} onChange={(e)=>{onChangeColor(e.toHexString())}} />)},
         {title:intl.formatMessage({id:"setting.language.title"}),element:(<Segmented options={languageOptions} defaultValue={locale} value={locale} onChange={(e)=>setLocale(e)} />)},
