@@ -1,0 +1,92 @@
+.box{
+    display: flex;
+    flex:1;
+    flex-flow: column;
+}
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--adminui-padding-xs);
+}
+.totalBox {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap:var(--adminui-padding);
+}
+.totalBox>div{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    border-right:solid 1px transparent;    
+}
+.totalBox>div span:first-of-type {
+    color:var(--adminui-color-text-tertiary);
+}
+.totalBox>div span:last-of-type {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.projectBox {
+    gap: var(--adminui-padding-xs);
+    margin:var(--adminui-margin-xs);
+}
+.projectItem {
+    border-bottom: solid 1px var(--adminui-color-border-secondary);
+    padding-block: var(--adminui-padding-xs);
+    align-items: center;
+}
+.projectItem .subject {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+.projectItem a{
+    font-weight: 600;
+    color:inherit;
+}
+.projectItem a:hover{
+    color:var(--adminui-color-primary);
+}
+.projectItem .description {
+    color:var(--adminui-color-text-tertiary);
+}
+.projectBox div:last-of-type {
+    border:0px;
+}
+
+.logsCard {
+    gap: var(--adminui-padding-xs);
+    margin:var(--adminui-margin-xs);
+}
+
+.logsItem {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--adminui-padding-xs);
+    padding-block: var(--adminui-padding-xs);
+    border-bottom: solid 1px var(--adminui-color-border-secondary);
+}
+.logsContent {
+    flex: 1;
+    justify-content: flex-end;    
+    display: flex;
+    gap: var(--adminui-padding-xs);
+    min-width: 0px;    
+    white-space:nowrap;
+}
+.logsContent>span{
+    overflow: hidden;
+    min-width: 0px;
+    text-overflow: ellipsis;
+}
+.logsContent a {
+    white-space:nowrap;
+}
+.logsCard div:first-of-type {
+    padding-block-start: 0px;
+}
+.logsCard div:last-of-type {
+    border:0px;
+}

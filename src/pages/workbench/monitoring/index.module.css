@@ -1,0 +1,11 @@
+.areaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--adminui-padding);
+    padding-bottom: var(--adminui-padding);
+}
+.areaHeader>div{
+    display: flex;
+    flex-flow: column; 
+}

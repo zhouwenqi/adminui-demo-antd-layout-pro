@@ -1,0 +1,17 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+#nprogress .bar {
+  background: var(--pageload-bar-color) !important;
+  height: 2px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #417ffb, 0 0 5px #417ffb !important;
+}

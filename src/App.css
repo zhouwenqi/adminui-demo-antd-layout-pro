@@ -1,0 +1,31 @@
+#root {
+  margin: 0 auto;
+}
+
+/** login button */
+.primary-button {
+  background-color: transparent;
+}
+.primary-button > span {
+  position: relative;
+}
+.primary-button::before {
+  content:'';
+  background: linear-gradient(135deg, #4086c1, #cb9cda, #6666a6);
+  position: absolute;
+  inset: -1px;
+  opacity: 1;
+  transition: all 0.3s;
+  border-radius: inherit;
+}
+.primary-button:hover::before {
+  background: linear-gradient(135deg, #9872d8, #cb9cda, #4086c1);
+  opacity: 0.7;
+}
+.primary-button:active::before {
+  opacity: 0.9;
+  background: linear-gradient(135deg, #8863c9, #be8ece, #61b3f7);
+}
+.primary-button:disabled::before {
+  opacity: 0.1;
+}

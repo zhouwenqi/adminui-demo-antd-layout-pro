@@ -1,0 +1,35 @@
+.salesReportHeader{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:var(--adminui-padding);
+    border-radius: var(--adminui-border-radius);
+}
+.salesReportHeader>div{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;    
+    padding-inline: var(--adminui-padding-xs);
+    border-left:solid 1px var(--adminui-color-border);
+}
+.salesReportHeader>div:first-of-type {
+    border-color: transparent;
+}
+.salesReportHeader>div>div{
+    display: flex;
+}
+
+.salesReportHeader span{
+    color:var(--adminui-color-text-tertiary);
+}
+.salesReportHeader span.memo{
+    margin:0px;
+    padding:0px;    
+    font-weight: 500;
+    color:var(--adminui-color-text);
+}
+.salesReportHeader h2{
+    margin:0px;
+    padding:0px;    
+    font-size: 2.2rem;
+}
