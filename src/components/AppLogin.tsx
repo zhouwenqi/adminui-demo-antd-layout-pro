@@ -89,7 +89,7 @@ export default function AppLogin(props:LoginProps){
         if(typeof brandInfo.logo == "string"){
             logoElement = <LazyImage style={{ width:60,minWidth:60}} src={brandInfo.logo} alt={brandInfo.name} />
         }else{
-            logoElement = brandInfo.logo
+            logoElement = <div style={{width:"64px"}}>{brandInfo.logo}</div>
         }
     }
 

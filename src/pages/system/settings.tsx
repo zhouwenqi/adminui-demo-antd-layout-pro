@@ -45,6 +45,12 @@ const segmentIcon:React.CSSProperties = {
 
 const initConfig:LayoutConfig = {    
     menuIconSize:16,
+    layoutType:"leftMenu",
+    headerHeight:50,
+    asideWidth:260,
+    theme:"system",
+    asideMenuInline:true,
+    hideAsideMenuDataEmpty:true,
     largeBrand:true,
     primaryColor:"#417ffb",
     collapsedPosition:"center",
@@ -130,10 +136,9 @@ export default function(){
                 skinName:e
             })
         }else{
-            setLayoutConfig({
-                ...layoutConfig,                
+            setLayoutConfig({               
                 ...initConfig,
-                menuItemSelectColor:undefined,
+                layoutType:"leftMenu",
                 noneHeader:false,
                 hideBorder:false,
                 skinName:""

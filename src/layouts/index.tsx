@@ -47,7 +47,7 @@ export default function(){
         disabledLocale:false,
         largeBrand:true,
         brandInfo:{
-            logo:<WardenLogo />,
+            logo:<WardenLogo  />,
             name:"Warden.vip",
             title:"Web build frameworks"
         },
