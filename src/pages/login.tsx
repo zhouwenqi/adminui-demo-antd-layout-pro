@@ -37,13 +37,13 @@ export default  function Login(){
                 name="username"
                 rules={[{ required: true, message: intl.formatMessage({id:"login.input.username.rule"}) }]}
                 >
-                <Input prefix={<User size={16} />} />
+                <Input prefix={<User size={16} />} placeholder={intl.formatMessage({id:"login.input.password.username"})} />
                 </Form.Item>
                     <Form.Item<FieldType>
                     name="password"
                     rules={[{ required: true, message: intl.formatMessage({id:"login.input.password.rule"}) }]}
                     >
-                    <Input.Password prefix={<Key size={16} />} />
+                    <Input.Password placeholder={intl.formatMessage({id:"login.input.password.label"})} prefix={<Key size={16} />} />
                 </Form.Item>
                     <Form.Item<FieldType> name="remember" valuePropName="checked" label={null}>
                     <Checkbox>{ intl.formatMessage({id:"login.input.rememberme.label"})}</Checkbox>
