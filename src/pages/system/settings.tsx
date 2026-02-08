@@ -147,8 +147,9 @@ export default function(){
     }
 
     const onChangeColor=(e:string)=>{
+        const config = layoutConfig.skinName ? {...initConfig} : {...layoutConfig}
         setLayoutConfig({
-            ...layoutConfig,
+            ...config,
             noneHeader:false,
             hideBorder:false,
             primaryColor:e,
