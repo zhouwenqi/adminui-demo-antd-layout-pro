@@ -16,7 +16,7 @@ export default defineThemeSkin({
     "name":"parkWavesNone",    
     "skinType":"custom",
     "layoutConfig":{
-        "theme":"system",
+        "theme":"light",
         "layoutType":"leftMenu",
         "asideMenuInline":false,
         "asideMenuGroup":true,
