@@ -1,6 +1,7 @@
 import { Col, theme, Row } from "antd"
 import { GridPanel, LogsPanel, PaymentChannelPanel, ProjectPanel, WelcomeHeaderPanel } from "./components"
 import styles from "./index.module.css"
+import { useConfigState } from "@adminui-dev/antd-layout"
 const {useToken} = theme
 
 /**
@@ -9,8 +10,10 @@ const {useToken} = theme
  */
 export default function(){  
     const  {token} = useToken()
+    const { layoutConfig } = useConfigState()
     const rowStyle:React.CSSProperties = {
-      padding:token.paddingXS
+      padding: layoutConfig.noneHeader ? `${token.paddingXS}px ${token.paddingXS}px ${token.paddingXS}px 0px` : token.paddingXS,
+      marginLeft: layoutConfig.noneHeader ? `-${token.paddingXS}px` : "0px"
     }
     return(
         <>
