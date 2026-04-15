@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@adminui-dev/antd-layout@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@adminui-dev/antd-layout/-/antd-layout-1.7.1.tgz#ee15308f3f5b0307e09db587a1642765364c5a48"
-  integrity sha512-yw8r68Z4H7xMdjo3fUMxWJo2cjwxdqtTSLSA869te7sAEAvegGf4hbCorQFGQgod1cq71QcATxZdTbGtTWdKDQ==
+"@adminui-dev/antd-layout@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@adminui-dev/antd-layout/-/antd-layout-1.7.3.tgz#5eb8a4cbd12750df44c1f57deaa98bf5519fe681"
+  integrity sha512-UyWzYWdJXgWmQ4T40ITHHuS//H2tbBMLG0VHNs22wV1unkUspINlEdJfhhTejiC7Snt8Shp+05bD5BxR5M5tYg==
   dependencies:
     "@adminui-dev/layout" "1.3.0"
     tslib "^2.6.0"

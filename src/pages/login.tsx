@@ -37,7 +37,7 @@ export default  function Login(){
                 name="username"
                 rules={[{ required: true, message: intl.formatMessage({id:"login.input.username.rule"}) }]}
                 >
-                <Input prefix={<User size={16} />} placeholder={intl.formatMessage({id:"login.input.password.username"})} />
+                <Input prefix={<User size={16} />} placeholder={intl.formatMessage({id:"login.input.username.label"})} />
                 </Form.Item>
                     <Form.Item<FieldType>
                     name="password"
