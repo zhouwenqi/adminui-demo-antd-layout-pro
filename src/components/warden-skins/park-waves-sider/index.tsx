@@ -1,4 +1,4 @@
-import { defineThemeSkin } from "@adminui-dev/layout"
+import type { ThemeSkin }  from "@adminui-dev/antd-layout"
 import { LazyImage } from "@adminui-dev/antd-layout"
 import { Grid } from "antd"
 
@@ -24,7 +24,7 @@ const ImageBackground=()=>{
         </div>
     )
 }
-export default defineThemeSkin({
+const skin:ThemeSkin = {
     "name":"parkWavesSider",    
     "skinType":"custom",
     "layoutConfig":{
@@ -49,4 +49,5 @@ export default defineThemeSkin({
     "logo":"/images/skins/park-waves/app-logo-light.webp",
     "icon":"/images/skins/park-waves/skin-icon-sider.webp",
     "backgroundContent":<ImageBackground  />
-})
+}
+export default skin

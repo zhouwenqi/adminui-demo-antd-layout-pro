@@ -1,5 +1,4 @@
-import { defineThemeSkin } from "@adminui-dev/layout"
-
+import type { ThemeSkin }  from "@adminui-dev/antd-layout"
 const skinBgStyles:React.CSSProperties = {
     position:"absolute",
     inset:"0",
@@ -12,7 +11,7 @@ const ImageBackground=()=>{
         </div>
     )
 }
-export default defineThemeSkin({
+const skin:ThemeSkin = {
     "name":"parkWavesNone",    
     "skinType":"custom",
     "layoutConfig":{
@@ -38,4 +37,5 @@ export default defineThemeSkin({
     "logo":"/images/skins/park-waves/app-logo-none.webp",
     "icon":"/images/skins/park-waves/skin-icon-none.webp",
     "backgroundContent":<ImageBackground  />
-})
+}
+export default skin

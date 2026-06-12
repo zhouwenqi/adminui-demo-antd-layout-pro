@@ -1,5 +1,5 @@
-import { defineThemeSkin } from "@adminui-dev/layout"
 import { LazyImage } from "@adminui-dev/antd-layout"
+import type { ThemeSkin }  from "@adminui-dev/antd-layout"
 import { Grid } from "antd"
 
 const { useBreakpoint } = Grid
@@ -24,7 +24,7 @@ const ImageBackground=()=>{
         </div>
     )
 }
-export default defineThemeSkin({
+const skin:ThemeSkin = {
     "name":"parkWavesDark",    
     "skinType":"custom",
     "layoutConfig":{
@@ -41,4 +41,5 @@ export default defineThemeSkin({
     "logo":"/images/skins/park-waves/app-logo-dark.webp",
     "icon":"/images/skins/park-waves/skin-icon-dark.webp",
     "backgroundContent":<ImageBackground  />
-})
+}
+export default skin
