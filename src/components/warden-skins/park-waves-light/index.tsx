@@ -18,9 +18,9 @@ const ImageBackground=()=>{
     const leftStyle = xs ? {"height":"100%"} : {"width:":"260px"}    
     return (
        <div style={skinBgStyles}>
-            <LazyImage style={{...leftStyle,...imgStyles,top:"0px"}} src="/images/skins/park-waves/aside-bg-light.webp" alt="aisde-bg.webp" />
-            <LazyImage style={{...imgStyles,width:"90%",top:"0px",right:"0px"}} src="/images/skins/park-waves/header-bg-light.webp" alt="header-bg.webp" />
-            <LazyImage style={{...imgStyles,height:"80px",bottom:"0px",right:"0px"}} src="/images/skins/park-waves/footer-bg-light.webp" alt="header-bg.webp" />
+            <LazyImage style={{...leftStyle,...imgStyles,top:"0px"}} src="/images/skins/park-waves-light/aside-bg-light.webp" alt="aisde-bg.webp" />
+            <LazyImage style={{...imgStyles,width:"90%",top:"0px",right:"0px"}} src="/images/skins/park-waves-light/header-bg-light.webp" alt="header-bg.webp" />
+            <LazyImage style={{...imgStyles,height:"80px",bottom:"0px",right:"0px"}} src="/images/skins/park-waves-light/footer-bg-light.webp" alt="header-bg.webp" />
         </div>
     )
 }
@@ -38,8 +38,8 @@ const skin:ThemeSkin = {
         "containerBlur":true,
         "menuItemSelectColor":"primary",
     },        
-    "logo":"/images/skins/park-waves/app-logo-light.webp",
-    "icon":"/images/skins/park-waves/skin-icon-light.webp",
+    "logo":"/images/skins/park-waves-light/app-logo-light.webp",
+    "icon":"/images/skins/park-waves-light/skin-icon-light.webp",
     "backgroundContent":<ImageBackground  />
 }
 export default skin

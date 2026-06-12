@@ -34,8 +34,8 @@ const skin:ThemeSkin = {
         "collapsedPosition":"top",
         "menuItemSelectColor":"invert",
     },        
-    "logo":"/images/skins/park-waves/app-logo-none.webp",
-    "icon":"/images/skins/park-waves/skin-icon-none.webp",
+    "logo":"/images/skins/park-waves-none/app-logo-none.webp",
+    "icon":"/images/skins/park-waves-none/skin-icon-none.webp",
     "backgroundContent":<ImageBackground  />
 }
 export default skin

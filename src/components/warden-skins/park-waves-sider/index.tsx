@@ -18,9 +18,9 @@ const ImageBackground=()=>{
     const leftStyle = xs ? {"height":"100%"} : {"width:":"260px"}    
     return (
        <div style={skinBgStyles}>
-            <LazyImage style={{...leftStyle,...imgStyles,top:"0px"}} src="/images/skins/park-waves/aside-bg-sider.webp" alt="aisde-bg.webp" />
-            <LazyImage style={{...imgStyles,width:"90%",top:"0px",right:"0px"}} src="/images/skins/park-waves/header-bg-light.webp" alt="header-bg.webp" />
-            <LazyImage style={{...imgStyles,height:"80px",bottom:"0px",right:"0px"}} src="/images/skins/park-waves/footer-bg-light.webp" alt="header-bg.webp" />
+            <LazyImage style={{...leftStyle,...imgStyles,top:"0px"}} src="/images/skins/park-waves-sider/aside-bg-sider.webp" alt="aisde-bg.webp" />
+            <LazyImage style={{...imgStyles,width:"90%",top:"0px",right:"0px"}} src="/images/skins/park-waves-sider/header-bg-light.webp" alt="header-bg.webp" />
+            <LazyImage style={{...imgStyles,height:"80px",bottom:"0px",right:"0px"}} src="/images/skins/park-waves-sider/footer-bg-light.webp" alt="header-bg.webp" />
         </div>
     )
 }
@@ -46,8 +46,8 @@ const skin:ThemeSkin = {
         "visibleBreadcrumbIcon":"all",
         "menuItemSelectColor":"default",
     },        
-    "logo":"/images/skins/park-waves/app-logo-light.webp",
-    "icon":"/images/skins/park-waves/skin-icon-sider.webp",
+    "logo":"/images/skins/park-waves-sider/app-logo-light.webp",
+    "icon":"/images/skins/park-waves-sider/skin-icon-sider.webp",
     "backgroundContent":<ImageBackground  />
 }
 export default skin

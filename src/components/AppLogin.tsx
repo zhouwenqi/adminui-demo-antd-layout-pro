@@ -93,7 +93,7 @@ export default function AppLogin(props:LoginProps){
         }
     }
 
-    const bgSrc = theme == "dark" ? "/images/skins/park-waves/skin-login-dark.webp" : "/images/skins/park-waves/skin-login-light.webp"
+    const bgSrc = theme == "dark" ? "/images/skins/park-waves-dark/skin-login-dark.webp" : "/images/skins/park-waves-light/skin-login-light.webp"
     const carouselSrcs = ["/images/login-screen-1.webp","/images/login-screen-2.webp","/images/login-screen-3.webp"] 
 
     const formLeftPanel = md ? (<div style={frameLeft}>
