@@ -26,7 +26,7 @@ const ImageBackground=()=>{
 }
 const skin:ThemeSkin = {
     "name":"parkWavesSider",    
-    "skinType":"custom",
+    "skinType":"system",
     "layoutConfig":{
         "theme":"light",
         "layoutType":"leftMenu",

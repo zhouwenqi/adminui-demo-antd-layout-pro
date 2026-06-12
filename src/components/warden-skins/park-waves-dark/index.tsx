@@ -26,7 +26,7 @@ const ImageBackground=()=>{
 }
 const skin:ThemeSkin = {
     "name":"parkWavesDark",    
-    "skinType":"custom",
+    "skinType":"system",
     "layoutConfig":{
         "theme":"dark",
         "primaryColor":"#9898ff",

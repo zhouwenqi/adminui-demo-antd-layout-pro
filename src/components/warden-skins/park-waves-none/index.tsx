@@ -13,7 +13,7 @@ const ImageBackground=()=>{
 }
 const skin:ThemeSkin = {
     "name":"parkWavesNone",    
-    "skinType":"custom",
+    "skinType":"system",
     "layoutConfig":{
         "theme":"light",
         "layoutType":"leftMenu",

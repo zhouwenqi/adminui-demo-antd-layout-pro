@@ -79,11 +79,11 @@ export default function(){
     ]
 
     // skin label locale    
-    themeSkinMap["custom"].forEach((item)=>{
+    themeSkinMap["system"].forEach((item)=>{
         item.label = intl.formatMessage({id:`skin.${item.name}.label`})
     })
 
-    let skinOptions = themeSkinMap["custom"].map(item=>({label:<SkinItem data={item} />,value:item.name,tooltip:item.label}))
+    let skinOptions = themeSkinMap["system"].map(item=>({label:<SkinItem data={item} />,value:item.name,tooltip:item.label}))
 
     // language list
     let languageOptions:any[] = []
