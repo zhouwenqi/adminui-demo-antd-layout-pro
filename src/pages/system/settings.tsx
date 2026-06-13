@@ -1,5 +1,5 @@
 import WardenLogo from '@/components/WardenLogo';
-import { Container, LazyImage, setSkinConfig, useConfigAction, useConfigState } from '@adminui-dev/antd-layout';
+import { Container, LazyImage, setSkinConfig, useConfigAction, useConfigState,hexToRgbaString } from '@adminui-dev/antd-layout';
 import type { LayoutConfig, AvatarPosition, BreadcrumbIconVisible, LayoutType, Position, Theme, ThemeSkin } from '@adminui-dev/antd-layout';
 import { ColorPicker, Segmented, Select, Switch, theme } from 'antd';
 import { Sun,Moon,SunMoon,LayoutPanelLeft,LayoutPanelTop } from "lucide-react"
@@ -176,15 +176,17 @@ export default function(){
         {title:intl.formatMessage({id:"setting.visibleBreadcrumbIcon.title"}),element:(<Segmented options={breadcrumbIconOptions} defaultValue={layoutConfig.visibleBreadcrumbIcon} value={layoutConfig.visibleBreadcrumbIcon} onChange={(e)=>{setLayoutConfig({...layoutConfig,visibleBreadcrumbIcon: e as BreadcrumbIconVisible})}} />)},
     ]    
 
+    const borderColor = layoutConfig.containerBlur ? hexToRgbaString(token.colorPrimary,0.1) : token.colorBorderSecondary
+  
     let items:React.ReactNode[]=[]
     data.forEach((item,index)=>{
-        items.push(<ConfigItem data={item} key={index} style={{borderBottom:`solid 1px ${token.colorBorderSecondary}`}} />)
+        items.push(<ConfigItem data={item} key={index} style={{borderBottom:`solid 1px ${borderColor}`}} />)
     })
 
     return(
         <Container mode='panel'>
             <div style={boxStyles}>
-                <div style={{...titleStyles,borderBottom:`solid 1px ${token.colorBorderSecondary}`}}>🗼{intl.formatMessage({id:"settings.list.title"})}</div>
+                <div style={{...titleStyles,borderBottom:`solid 1px ${borderColor}`}}>🗼{intl.formatMessage({id:"settings.list.title"})}</div>
                 { items }
                 <div style={{...footerStyles,color:token.colorTextSecondary}}>{intl.formatMessage({id:"settings.footer.title"})}<a href='https://github.com/zhouwenqi/adminui-antd-layout' target='_blank'>{intl.formatMessage({id:"global.here"})}</a> </div>
             </div>           
