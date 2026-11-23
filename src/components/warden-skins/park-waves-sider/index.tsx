@@ -45,7 +45,11 @@ const skin:ThemeSkin = {
         "collapsedPosition":"top",
         "visibleBreadcrumbIcon":"all",
         "menuItemSelectColor":"default",
-    },        
+    }, 
+    "antdToken":{
+        "colorBgBase": "#f9f8fd",
+        "colorTextBase": "#0a0324"
+    },       
     "logo":"/images/skins/park-waves-sider/app-logo-light.webp",
     "icon":"/images/skins/park-waves-sider/skin-icon-sider.webp",
     "backgroundContent":<ImageBackground  />

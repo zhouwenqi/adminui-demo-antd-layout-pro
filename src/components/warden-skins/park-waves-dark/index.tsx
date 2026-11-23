@@ -29,7 +29,7 @@ const skin:ThemeSkin = {
     "skinType":"system",
     "layoutConfig":{
         "theme":"dark",
-        "primaryColor":"#9898ff",
+        "primaryColor":"#5337c1",
         "noneHeader":false,
         "hideBorder":false,
         "asideBlur":true,
@@ -37,7 +37,11 @@ const skin:ThemeSkin = {
         "largeBrand":true,
         "containerBlur":true,
         "menuItemSelectColor":"primary",
-    },        
+    },       
+    "antdToken":{
+        "colorBgBase": "#0c0c0d",
+        "colorTextBase": "#f9f8fd"
+    }, 
     "logo":"/images/skins/park-waves-dark/app-logo-dark.webp",
     "icon":"/images/skins/park-waves-dark/skin-icon-dark.webp",
     "backgroundContent":<ImageBackground  />

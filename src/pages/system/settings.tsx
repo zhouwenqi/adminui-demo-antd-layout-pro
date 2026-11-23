@@ -125,7 +125,7 @@ export default function(){
     // change skin
     const onChangeSkin=(e:string)=>{
         if(e){
-            const skin = themeSkinMap["custom"].find(item=>item.name==e)
+            const skin = themeSkinMap["system"].find(item=>item.name==e)
             if(!skin){
                 return
             }
